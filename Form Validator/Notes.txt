@@ -1,0 +1,64 @@
+To declare variables in CSS:-
+
+:root {
+  --success-color: rgb(100, 226, 117);
+  --error-color: rgba(236, 65, 65, 0.733);
+}
+=>Syntax:-    --variable-name : value;
+
+
+To use the variables:-
+
+ border-color: var(--error-color);
+ =>var method is used to retrieve data stored in the passed variable
+
+
+*]New Statements:-
+
+->.formSections.success input{}
+=>Apply properties to the input element which inside an elememnt with BOTH the classes of formSections and error
+
+->.formSections input:focus {}
+=>Focus is when the user has clicked on the input bar
+
+->outline
+=>The default outline that surrounds a selected input tag
+
+->body{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+=>aligns the body elememnts to the center of the page with its minimum height being the whole view port i.e 100vh
+
+->You have to give Padding to the Placeholder text to distance it from the box outline.
+
+->box-sizing : border-box;
+=>This aligns all the elememnts in a single column 
+
+--------------------------------------------------------------------------
+                       Javascript
+--------------------------------------------------------------------------
+
+.parentElement
+=>we can call the parent elememnt of the selected tag
+
+=>We can apply querySelector method to a div too to access the elememnt inside it.
+
+.trim()
+=>Used to remove extra white spaces
+
+.id
+=>Used to get the id name of the elememnt
+
+.preventDefault()
+=> method tells the user agent that if the event does not get explicitly handled, its default action should not be taken as it normally would be. The event continues to propagate as usual, unless one of its event listeners calls stopPropagation() or stopImmediatePropagation(), either of which terminates propagation at once.
+
+As noted below, calling preventDefault() for a non-cancelable event, such as one dispatched via EventTarget.dispatchEvent()
+
+
+
+
+
+

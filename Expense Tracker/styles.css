@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+:root {
+  --box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.24);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f7f7;
+  display: flex;
+  animation: imagebkg 10s infinite;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  color: black;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  margin: 20px auto;
+  min-width: 400px;
+  padding: 10px 25px;
+  background-color: #f7f7f7c2;
+  border-radius: 5px;
+}
+h1 {
+  letter-spacing: 1px;
+  margin: 0;
+}
+h2 {
+  text-align: center;
+  background-color: rgba(186, 214, 218, 0.39);
+  margin: 0 0 5px;
+  padding: 5px 0;
+  color: rgb(22, 56, 121);
+}
+h3 {
+  border-bottom: 1px solid rgb(141, 139, 139);
+  padding-bottom: 10px;
+  margin: 20px 0 5px;
+}
+h4 {
+  margin: 0;
+  text-transform: uppercase;
+}
+/* --------------------Income Expense Container------------------ */
+.inc-exp-container {
+  display: flex;
+  background-color: white;
+  box-shadow: var(--box-shadow);
+  margin-top: 10px;
+  padding: 15px;
+  /* justify-content: center; */
+}
+.inc-exp-container > div {
+  /* margin: auto;
+  width: 50%;
+  text-align: center; */
+  flex: 1;
+  text-align: center;
+}
+.inc-exp-container > div:first-of-type {
+  border-right: 1px solid #dedede;
+}
+/* ----------------Handling money------------------------ */
+.money {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+.money.plus {
+  color: #1bbd36;
+}
+.money.minus {
+  color: #e92610;
+}
+/* -----------------Displaying Transactions----------------- */
+ul {
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 40px;
+}
+ul li {
+  background-color: white;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px 5px;
+  margin: 10px 0;
+}
+.delete-btn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  border: 0;
+  height: 20px;
+  transform: translateY(-50%);
+  transition: all 0.3s cubic-bezier(0.41, 0.85, 0.87, 1.79);
+  opacity: 0;
+  cursor: pointer;
+  outline: 0;
+}
+li:hover .delete-btn {
+  transform: translate(-100%, -50%);
+  opacity: 1;
+}
+ul li.minus {
+  border-right: 5px solid #e92610;
+}
+ul li.plus {
+  border-right: 5px solid #1bbd36;
+}
+/* -------------------Form----------------------------- */
+label {
+  display: inline-block;
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+input {
+  padding: 8px;
+  border: 1px solid gray;
+  display: block;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  width: 100%;
+  outline: 0;
+}
+
+.btn {
+  width: 100%;
+  display: block;
+  margin: 10px auto 0;
+  height: 40px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 16px;
+  color: white;
+  background: #4b6cb7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #182848,
+    #4b6cb7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #1f3e77,
+    #5a83e0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.btn:hover {
+  background: #4b6cb7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #182848,
+    #4b6cb7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #1f3e77,
+    #5a83e0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  cursor: pointer;
+  font-size: 17px;
+}
+
+@keyframes imagebkg {
+  0% {
+    background-image: url("helloquence-OQMZwNd3ThU-unsplash.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  25% {
+    background-image: url("carlos-muza-hpjSkU2UYSU-unsplash.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  50% {
+    background-image: url("josh-appel-NeTPASr-bmQ-unsplash.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  75% {
+    background-image: url("christine-roy-ir5MHI6rPg0-unsplash.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  100% {
+    background-image: url("helloquence-OQMZwNd3ThU-unsplash.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

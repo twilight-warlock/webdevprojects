@@ -1,0 +1,175 @@
+
+/* ------------------------------ */
+/* Gallery Landing Page */
+/* ------------------------------ */
+
+html
+{
+    margin: 0px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    color: #444;
+}
+body
+{
+    margin: 0px;
+}
+.galleryPage
+{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom right, rgb(232, 234, 235),rgb(192, 234, 247));
+}
+
+
+/* ------------------------------ */
+/* Navbar Code */
+/* ------------------------------ */
+
+
+
+.navbar
+{
+    position: fixed;
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 7vh;
+    background: linear-gradient(to top right, rgb(94, 140, 161), rgb(53, 103, 122));
+    font-size: 18px;
+    text-decoration: none;
+    overflow: hidden;
+    padding-top: 20px;
+}
+.brandName
+{
+    margin-left: 2vh;
+    font-size: 20px;
+    color: whitesmoke;
+}
+.brandName:hover
+{
+    color: gold;
+}
+.aligning
+{
+    display: flex;
+    margin-left: 80vh;
+}
+.tabs
+{
+    margin-left: 5vh;
+    /* margin-top: 2vh; */
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+li a
+{
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 14px 6px;
+    text-decoration: none;
+}
+li a:hover
+{
+    /* background: linear-gradient(to top right, rgb(59, 79, 145), rgb(86, 127, 204)); */
+    background: whitesmoke;
+    font-size: 19px;
+    color: rgb(46, 85, 117);
+    transition: 0.3s;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+/* ------------------------------ */
+/* Images Displayed Code */
+/* ------------------------------ */
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+}
+.imageNo
+{
+    width: 28%;
+    margin: auto;
+    height: 300px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin: 5vh auto;
+    box-shadow: 5px 7px 8px rgb(155, 153, 153);
+}
+.imageNo:nth-child(1)
+{
+    background: url("../Gallery/MG\ AD\ SP.jpg");
+    background-position-x: -2px;
+}
+.imageNo:nth-child(2)
+{
+    background: url("../Gallery/MG\ campaign.jpg");
+    background-position-x: -200px;
+}
+.imageNo:nth-child(3)
+{
+    background: url("../Gallery/MG\ Campaigning\ Citizen\ Candidate-\ FB-\ Oct\ 7-2009-\ samir\ Manglorkar.jpg");
+    background-position-x: -220px;
+    background-position-y: -50px;
+}
+.imageNo:nth-child(4)
+{
+    background: url("../Gallery/MG\ 1-CTBUH-2010-ROMF\ India-\ Feb\ 13\,2010.jpg");
+    background-position-y: -100px;
+}
+.imageNo:nth-child(5)
+{
+    background: url("../Gallery/MG\ 3-CTBUH-2010-ROMF\ India-\ Feb\ 13\,2010.jpg");
+    background-position-x: -150px;
+}
+.imageNo:nth-child(6)
+{
+    background: url("../Gallery/MG\ AK\ Together.jpg");
+    background-position-x: -200px;
+}
+.imageNo:nth-child(7)
+{
+    background: url("../Gallery/MG\ Kiran\ Bedi1-Azad\ Maidan-02.05.2011-Sagar\ Bekal.jpg");
+    background-position: center;
+}
+.imageNo:nth-child(8)
+{
+    background: url("../Gallery/MG1-Bandra-Bhrashtachar\ Mitao\ Satyagrah-08.06.2011-Surindra\ Khubchandra.jpg");
+    background-position: center;
+}
+.imageNo:hover
+{
+    box-shadow: 5px 7px 9px #444;
+}
+
+
+@media (max-width:860px)
+{
+    .row
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .imageNo
+    {
+        width: 80%;
+    }
+    .brandName
+    {
+        font-size: 1rem;
+    }
+    .imageNo:hover
+    {
+        box-shadow: 5px 7px 9px #444;
+    }
+}

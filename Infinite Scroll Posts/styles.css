@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  background: url("jorge-rojas-dbj0O83MM5Y-unsplash.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+h1 {
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 2.5rem;
+  color: rgb(254, 255, 225);
+}
+
+.filter-container {
+  margin-top: 20px;
+  width: 60vw;
+  max-width: 800px;
+}
+
+.filter {
+  width: 100%;
+  padding: 10px;
+  padding-left: 20px;
+  font-size: 1rem;
+  background-color: rgb(248, 252, 228);
+  border-radius: 15px;
+  border: 0;
+}
+
+.post {
+  position: relative;
+  background-color: rgba(39, 38, 38, 0.384);
+  margin: 40px auto;
+  box-shadow: 0 0 4px rgba(245, 245, 245, 0.329);
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  width: 70vw;
+}
+
+.post-title {
+  margin: 0;
+}
+.post .post-body {
+  margin: 15px 0 0;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+.post .post-info {
+  margin-left: 20px;
+}
+.post .number {
+  background-color: whitesmoke;
+  color: black;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 0;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  font-size: 1.1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.loader {
+  opacity: 0;
+  display: flex;
+  position: fixed;
+  bottom: 50px;
+  transition: opacity 0.3s ease-in;
+}
+.loader.show {
+  opacity: 1;
+}
+.loader .circle {
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 5px;
+}
+.circle:nth-of-type(1) {
+  animation-name: circleA;
+  animation-duration: 0.75s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+}
+.circle:nth-of-type(2) {
+  animation-name: circleB;
+  animation-duration: 0.75s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+}
+.circle:nth-of-type(3) {
+  animation-name: circleC;
+  animation-duration: 0.75s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes circleA {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes circleB {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes circleC {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .filter-container {
+    width: 90%;
+  }
+  .post {
+    width: 90%;
+  }
+}

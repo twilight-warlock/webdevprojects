@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Hang Man Game</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Hang Man Game</h1>
+    <p>Find the Hidden Word - Enter a Letter</p>
+    <div class="game-container">
+      <svg height="350" width="400" class="figure-container">
+        <!-- Rod -->
+        <line x1="60" y1="20" x2="220" y2="20" />
+        <line x1="220" y1="20" x2="220" y2="60" />
+        <line x1="60" y1="20" x2="60" y2="300" />
+        <line x1="20" y1="300" x2="100" y2="300" />
+
+        <!-- Head -->
+        <circle cx="220" cy="90" r="30" class="figure-part" />
+
+        <!-- Body -->
+        <line x1="220" y1="120" x2="220" y2="220" class="figure-part" />
+
+        <!-- Hands -->
+        <line x1="220" y1="170" x2="170" y2="130" class="figure-part" />
+        <line x1="220" y1="170" x2="270" y2="130" class="figure-part" />
+
+        <!-- Legs -->
+        <line x1="220" y1="220" x2="170" y2="260" class="figure-part" />
+        <line x1="220" y1="220" x2="270" y2="260" class="figure-part" />
+      </svg>
+
+      <!-- Wrong Letters Container -->
+      <div class="incorrect" id="incorrect"></div>
+
+      <!-- Word -->
+      <div class="word" id="word"></div>
+    </div>
+
+    <!-- Container for Messages -->
+    <div class="popup-container" id="popup-container">
+      <div class="popup">
+        <h2 id="final-message"></h2>
+        <button id="play-again">Play Again</button>
+      </div>
+    </div>
+
+    <!-- Notification -->
+    <div class="notification-container " id="notification-container">
+      <p>You have already Entered this letter</p>
+    </div>
+
+    <script src="script.js" async defer></script>
+  </body>
+</html>

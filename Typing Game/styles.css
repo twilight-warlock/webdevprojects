@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #004e92,
+    #000428
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #004e92,
+    #000428
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  margin: 0;
+  display: flex;
+  font-family: "Nunito", sans-serif;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+button {
+  padding: 10px 12px;
+  border: 0;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: 0;
+}
+
+.settings-btn {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  background-color: #16b4b9;
+  color: white;
+  transition: transform 0.5s;
+  border: 5px solid rgb(255, 255, 255);
+  outline: 0;
+  border-radius: 50%;
+  font-size: 1.3rem;
+}
+
+.settings {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(0%);
+  transition: transform 0.3s ease-in-out;
+  background-color: #04b3f8b4;
+  color: white;
+  font-size: 1.1rem;
+  border-bottom: 3px solid white;
+}
+.settings.hide {
+  transform: translateY(-100%);
+}
+.settings-btn:hover {
+  transform: rotate(1turn) scale(1.1);
+}
+
+select {
+  width: 200px;
+  padding: 5px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 5px;
+  outline: 0;
+}
+
+.container {
+  background-color: #131d75;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.603);
+  color: white;
+  position: relative;
+  text-align: center;
+  width: 500px;
+  border: 1px solid white;
+}
+.container h2 {
+  background-color: #0f144693;
+  padding: 10px;
+  margin: 0 0 40px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+}
+.container h1 {
+  margin: 0;
+}
+
+.container input {
+  border-radius: 5px;
+  border: 0;
+  font-size: 14px;
+  width: 300px;
+  padding: 12px 20px;
+  margin-top: 10px;
+  outline: 0;
+}
+
+.time-container {
+  position: absolute;
+  top: 70px;
+  left: 20px;
+}
+.score-container {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+}
+
+.game-over-container {
+  width: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(13, 13, 94);
+  border-radius: 5px;
+  border-right: 1px solid white;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

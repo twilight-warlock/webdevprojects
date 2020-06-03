@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: darkcyan;
+}
+.btn-container {
+  padding: 30px;
+}
+button {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin: 25px 50px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+#b1 {
+  background-color: white;
+  color: darkcyan;
+  border: 3px solid transparent;
+  transition-property: background-color, color, border;
+  transition-duration: 0.4s;
+}
+#b1:hover {
+  background-color: darkcyan;
+  color: white;
+  border: 3px solid white;
+}
+/* ----------------------------------------------------- */
+#b2 {
+  position: relative;
+}
+#b2:before {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: width 0.4s;
+}
+#b2:hover:before {
+  width: 100%;
+}
+#b2:after {
+  content: "";
+  height: 0%;
+  width: 3px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: height 0.4s;
+}
+#b2:hover::after {
+  height: 100%;
+}
+/* ----------------------------------------------------- */
+#b3 {
+  position: relative;
+  letter-spacing: 0px;
+  transition: letter-spacing 0.3s;
+}
+#b3:hover {
+  letter-spacing: 5px;
+}
+#b3::before {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: width 0.3s;
+}
+#b3:hover::before {
+  width: 100%;
+}
+#b3::after {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s;
+}
+#b3:hover::after {
+  width: 100%;
+}
+/* ----------------------------------------------------- */
+#b4 {
+  position: relative;
+}
+#b4:before {
+  content: "";
+  height: 15px;
+  width: 15px;
+  border: 2px solid white;
+  border-top: transparent;
+  border-right: transparent;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition-property: width height;
+  transition-duration: 0.4s;
+}
+#b4:hover:before {
+  height: 100%;
+  width: 100%;
+}
+#b4::after {
+  content: "";
+  height: 15px;
+  width: 15px;
+  border: 2px solid white;
+  border-bottom: transparent;
+  border-left: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition-property: width height;
+  transition-duration: 0.4s;
+}
+#b4:hover::after {
+  height: 100%;
+  width: 100%;
+}
+/* ----------------------------------------------------- */
+#b5 {
+  border: 2px solid white;
+  transition-property: box-shadow;
+  transition-duration: 0.4s;
+  position: relative;
+}
+#b5:hover {
+  box-shadow: inset 0 0 15px white;
+}
+#b5::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid white;
+  transition-property: transform, border-color;
+  transition-duration: 0.4s;
+}
+#b5:hover::before {
+  transform: scale(1.2);
+  border-color: transparent;
+}
+/* ----------------------------------------------------- */
+#b6 {
+  position: relative;
+  border: 1px solid white;
+  transition: color 0.3s;
+}
+#b6:hover {
+  color: teal;
+}
+#b6::before {
+  content: "";
+  height: 100%;
+  width: 0%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: white;
+  transition-property: width, color;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.02, 0.39, 0.84, -0.21), linear;
+  z-index: -1;
+}
+#b6:hover::before {
+  width: 100%;
+}
+/* ----------------------------------------------------- */
+#b7 {
+  position: relative;
+  border: 1px solid white;
+  overflow: hidden;
+  color: white;
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+#b7:hover {
+  color: teal;
+}
+#b7::before {
+  content: "";
+  height: 150%;
+  width: 50%;
+  position: absolute;
+  top: -20px;
+  left: -90px;
+  background: white;
+  transform: rotate(10deg);
+  transition-property: width;
+  transition-duration: 0.3s;
+  z-index: -1;
+}
+#b7:hover::before {
+  width: 200%;
+}
+/* ----------------------------------------------------- */
+#b8 {
+  border: 1px solid white;
+  position: relative;
+  color: white;
+  transition: color 0.4s;
+}
+#b8:hover {
+  color: teal;
+}
+#b8::before {
+  content: "";
+  width: 100%;
+  height: 0%;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: height 0.3s;
+  z-index: -1;
+}
+#b8:hover::before {
+  height: 50%;
+}
+#b8::after {
+  content: "";
+  width: 100%;
+  height: 0%;
+  background: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: height 0.3s;
+  z-index: -1;
+}
+#b8:hover::after {
+  height: 50%;
+}
+/* ----------------------------------------------------- */
+#b9 {
+  border: 1px solid white;
+  border-radius: 0%;
+  transition: border-radius 0.4s;
+}
+#b9:hover {
+  border-radius: 35px;
+}
+/* ----------------------------------------------------- */
+#b10 {
+  border: 1px solid white;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  transition: color 0.4s;
+}
+#b10:hover {
+  color: teal;
+}
+#b10::before {
+  content: "";
+  width: 10%;
+  height: 100%;
+  position: absolute;
+  top: -20px;
+  left: -40px;
+  transform: rotate(30deg);
+  background: white;
+  border-radius: 80%;
+  transition-property: width, height, border-radius;
+  transition-duration: 0.4s;
+  z-index: -1;
+}
+#b10:hover::before {
+  height: 300%;
+  width: 300%;
+  border-radius: 0;
+}

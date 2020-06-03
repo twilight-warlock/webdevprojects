@@ -1,0 +1,305 @@
+html
+{
+    margin: 0px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    color: #444;
+}
+body
+{
+    margin: 0px;
+}
+
+/* ------------------------------------ */
+/* Navbar Code */
+/* ------------------------------------ */
+
+.navbar
+{
+    position: fixed;
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 7vh;
+    background: linear-gradient(to top right, rgb(190, 193, 194), rgb(83, 84, 85));
+    font-size: 18px;
+    text-decoration: none;
+    overflow: hidden;
+    padding-top: 20px;
+}
+.brandName
+{
+    margin-left: 2vh;
+    font-size: 20px;
+    color: whitesmoke;
+}
+.brandName:hover
+{
+    color: gold;
+}
+.aligning
+{
+    display: flex;
+    margin-left: 80vh;
+}
+.tabs
+{
+    margin-left: 5vh;
+    /* margin-top: 2vh; */
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+li a
+{
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 14px 6px;
+    text-decoration: none;
+}
+li a:hover
+{
+    /* background: linear-gradient(to top right, rgb(59, 79, 145), rgb(86, 127, 204)); */
+    background: whitesmoke;
+    font-size: 19px;
+    color: rgb(46, 85, 117);
+    transition: 0.3s;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+/* ---------------------------- */
+/* Landing Page */
+/* ---------------------------- */
+
+.heroImage
+{
+    height: 100vh;
+    background: url("../Projects/davide-ragusa-gcDwzUGuUoI-unsplash.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+.overlay
+{
+    background: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.caption
+{
+    /* margin-left: 55%; */
+    margin: auto;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* margin-right: 5%; */
+}
+.caption p
+{
+    font-size: 2rem;
+    color: whitesmoke;
+}
+.caption hr
+{
+    width: 40%;
+    background-color: gold;
+    border: none;
+    height: 4px;
+    border-radius: 5px;
+}
+.caption button
+{
+    background: linear-gradient(to top right, #606161, #373838);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 5%;
+    border: none;
+    border-radius: 100px;
+    height: 50px;
+    width: 150px;
+    font-size: 16px;
+}
+.heroImage button:hover 
+{
+    background: #fff;
+    color: #5e5f5f;
+    font-size: 17px;
+}
+
+/* ------------------------------------ */
+/* Summary Code */
+/* ------------------------------------ */
+
+.summary
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    height: 100vh;
+}
+.card
+{
+    display: flex;
+    flex-direction: column;
+    margin: 7vh auto;
+    width: 40%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 2px 3px 5px #444;
+    border-radius: 15px;
+    border: none;
+}
+.card:hover
+{
+    box-shadow: 3px 5px 7px #333;
+}
+.topImage1
+{
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    border: none;
+    background: url("../Projects/project1.jpg");
+    background-position: center;
+    margin: 5vh auto;
+}
+
+.topImage2
+{
+    height: 300px;
+    width: 100%;
+    background: url("../Projects/chuttersnap-hoVa5MrjBiQ-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    border: none;
+    background-position: top;
+    margin: 5vh auto;
+}
+
+.card h3
+{
+    font-size: 2rem;
+    margin: 0;
+    color: rgb(94, 93, 93);
+    margin-left: 2vh;
+}
+.card p
+{
+    font-size: 1.2rem;
+    color: gray;
+    margin: 3vh 2vh;
+    text-align: justify;
+}
+
+.share button
+{
+    height: 5vh;
+    width: 18%;
+    background: linear-gradient(to top right, rgb(48, 233, 110),rgb(15, 219, 49));
+    border-radius: 15px;
+    border: none;
+    font-size: 16px;
+    margin-left: 2vh;
+    margin-bottom: 3vh;
+}
+.share button:hover
+{
+    color: rgb(34, 180, 71);
+    font-size: 18px;
+    transition: 0.2s;
+    background: whitesmoke;
+}
+.like button
+{
+    height: 5vh;
+    width: 10%;
+    background: linear-gradient(to top right,rgb(201, 109, 129),rgb(219, 56, 45));
+    border-radius: 15px;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 3vh;
+    margin-left: 2vh;
+}
+.like button:hover
+{
+    color: tomato;
+    background: whitesmoke;
+    transition: 0.2s;
+    font-size: 18px;
+}
+
+/* ------------------------------------ */
+/* CopyRight */
+/* ------------------------------------ */
+
+.copyRight
+{
+    background: linear-gradient(to top right, rgb(243, 241, 241), rgb(199, 204, 245) );
+    height: 5vh;
+    display: flex;
+}
+.alignContent
+{
+    width: 100%;
+    /* margin: 0 auto; */
+    text-align: center;
+}
+.alignContent p
+{
+    text-align: center;
+}
+
+@media (max-width : 860px)
+{
+    .brandName
+    {
+        font-size: 1rem;
+    }
+    .caption
+    {
+        width: 80%;
+        margin-top: 60vh;
+    }
+    .caption p
+    {
+        font-size: 1.2rem;
+    }
+    .caption button
+    {
+        width: 100px;
+        font-size: 14px;
+    }
+    .caption button:hover
+    {
+        font-size: 15px;
+    }
+    .card
+    {
+        width: 80%;
+        height: auto;
+    }
+    .share button 
+    {
+        font-size: 14px;
+        width: 22%;
+    }
+    .share button:hover 
+    {
+        font-size: 16px;
+    }
+}

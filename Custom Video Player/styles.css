@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Mystery+Quest&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 100vh;
+  margin: 0;
+  background: #bdc3c7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #2c3e50,
+    #bdc3c7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #2c3e50,
+    #bdc3c7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: white;
+  font-family: "Mystery Quest", cursive;
+  margin: 15px auto;
+}
+.screen {
+  cursor: pointer;
+  width: 60%;
+  height: 75vh;
+  background-color: black !important;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  background-color: #333;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color: white;
+  padding: 10px;
+}
+.controls .btn {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+.controls .fa-play-circle {
+  color: #0cec2a;
+}
+.controls .fa-stop {
+  color: #f11b14;
+}
+.controls .fa-pause-circle {
+  color: white;
+}
+.controls .timestamp {
+  color: white;
+  font-weight: bold;
+  margin: 0 5px;
+}
+.controls .duration {
+  color: white;
+  font-weight: bold;
+  margin: 0 5px;
+}
+.btn:focus {
+  outline: none;
+}
+@media (max-width: 800px) {
+  .screen,
+  .controls {
+    width: 90%;
+  }
+}

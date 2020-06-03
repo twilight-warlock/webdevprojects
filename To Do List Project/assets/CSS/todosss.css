@@ -1,0 +1,83 @@
+body
+{
+    background: linear-gradient(to right,rgb(89, 182, 243),rgb(184, 241, 219));
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.container
+{
+    margin: 30vh auto;
+    width: 25%;
+    background: #f7f7f7;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+h1
+{
+    background: #2980b9;
+    color: whitesmoke;
+    margin: 0;
+    padding: 4% 8%;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+h1 i
+{
+    float: right;
+}
+input
+{
+    width: 100%;
+    color: #2980b9;
+    background: #f7f7f7;
+    margin: 0;
+    height: 40px;
+    font-size: 1.2rem;
+    padding: 2% 4%;
+    box-sizing: border-box;
+    border: 3px solid rgba(0, 0, 0, 0);
+}
+input:focus
+{
+    border: 3px solid #2980b9;
+    outline: none;
+    background: #fff;
+}
+ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li{
+    background: #f7f7f7;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+}
+li:nth-child(2n)
+{
+    background: white;
+}
+span
+{
+    background: #e74c3c;
+    height: 40px;
+    text-align: center;
+    color: white;
+    margin-right: 2%;
+    display: inline-block;
+    width: 0px;
+    transition: 0.2s linear;
+    opacity: 0;
+}
+li:hover span
+{
+    width: 40px;
+    opacity: 1.0;
+}
+.completed
+{
+    color: gray;
+    text-decoration: line-through;
+}

@@ -1,0 +1,237 @@
+html{
+    margin: 0px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    color: #444;
+}
+body{
+    margin: 0px;
+}
+.carousel
+{
+    height: 100vh;
+    background: url("../Home/download3.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    animation: slider 10s infinite forwards ease-in-out;
+    animation-delay: 2s;
+}
+.tint{
+    /* margin: auto; */
+    background: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.textDisp
+{
+    margin-top: 22vh;
+    font-size: 2.5rem;
+    text-align: center;
+    color: azure;
+    float: right;
+    width: auto;
+    /* height: 100px; */
+    /* text-decoration: underline; */
+    /* margin: auto; */
+}
+.textDisp h1{
+    
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;    
+    margin-bottom: 2%;
+    padding-left: 70%;
+}
+.textDisp p{
+    font-size: 2rem;
+    width: 40%;
+    text-decoration: none;
+    padding-left: 60%;
+    padding-right: 3%;
+}
+.textDisp hr {
+    width: 22%;
+    background-color: gold;
+    border: none;
+    height: 4px;
+    margin-top: 6vh;
+    margin-left: 74%;
+    /* padding-left: 60%; */
+    border-radius: 5px;
+  }
+
+  
+
+@media (max-width: 860px) {
+    .textDisp p {
+        padding: 0;
+    }
+}
+
+.textDisp button{
+  background: linear-gradient(to top right, #005c68, #018496);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+  border-radius: 100px;
+  height: 50px;
+  width: 150px;
+  font-size: 16px;
+}
+.textDisp a{
+    text-decoration: none;
+    margin-left: 70%; 
+    font-size: 1rem;
+    margin-top: 10vh;
+}
+a button:hover {
+    background: #fff;
+    color: #005c69;
+    font-size: 17px;
+  }
+.info{
+    /* float: left; */
+    /* margin-right: 10%; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* display: flex; */
+}
+.info h1{
+    font-size: 3.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 40%;
+    /* color: gray; */
+    padding-left: 3%;
+    display: flex;
+}
+.row img{
+    height: 50%;
+    margin-top: 5%;
+    width: 40%;
+}
+.info p{
+    width: 70%;
+    padding-left: 3%;
+    font-size: 1.75rem;
+    font-family: sans-serif;
+}
+.row{
+    display: flex;
+    width: 70%;
+    margin-right:0 ;
+    margin-top: 5%;
+}
+@keyframes slider{
+    0% {
+        background: url("../Home/download3.jpg");
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    33% {
+        background: url("../Home/download2.jpg");
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    66% {
+        background: url("../Home/download4.jpg");
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100% {
+        background: url("../Home/download3.jpg");
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+
+.grid-container {
+    display: grid;
+    grid-column-gap: 2%;
+    grid-template-columns: auto auto auto auto;
+    padding: 5% 2%;
+    width: 80%;
+    margin: auto;
+    height: 70vh;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 4%;
+    font-size: 2rem;
+    text-align: left;
+}
+.grid-item h1{
+    font-family: 'Bitter', serif;
+    font-size: 3.5rem;
+}
+.grid-item p {
+    width: 90%;
+    text-align: justify;
+    font-size: 20px;
+}
+.grid-item img{
+    width : auto;
+    height: 60vh;
+    border-radius: 5px;
+    box-shadow: -4px -4px 8px #aaa, 4px 4px 8px #aaa;
+}
+ul {
+    position: fixed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 9vh;
+    font-size: 2rem;
+    background: linear-gradient(to right, #00a8be, #006674);
+    display: inline;
+    overflow: hidden;
+    padding-top: 20px;
+  }
+  li a {
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+li{
+    float: left;
+}
+li a:hover{
+    background-color: blue;
+}
+.aligning li{
+    float: inline-start;
+    /* display: inline; */
+}
+.aligning{
+    padding-left: 45%;
+}
+
+/* Footer */
+
+.footer {
+    height: 10vh;
+    background: #eee;
+    display: flex;
+}
+
+.footer p {
+    margin: auto;
+}

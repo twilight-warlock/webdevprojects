@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Menu Modal Slider</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/7a990fd68d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="logo">
+      <img src="https://randomuser.me/api/portraits/men/77.jpg" alt="user" />
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <header>
+      <button class="toggle" id="toggle">
+        <i class="fa fa-basketball-ball fa-2x"></i>
+      </button>
+      <h1>The BasketBall Tryouts</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, minus.
+      </p>
+      <button class="cta-btn" id="open">Sign Up</button>
+    </header>
+
+    <div class="overlay">
+      <div class="container">
+        <h2>Why Should You Signup?</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi non ad
+          sequi consequuntur, officia minus id necessitatibus fugiat porro
+          numquam quos adipisci tenetur harum. Rem nemo natus, eveniet amet
+          ipsum, quis delectus aut doloremque animi sit odit molestias, minus
+          temporibus.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, labore
+          rem. Nemo voluptatem iste assumenda modi ipsa! Dolores, laboriosam
+          fugit.
+        </p>
+
+        <h2>Wanna Know More</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. At quia ea
+          aliquam consequuntur ab voluptatum temporibus possimus, eaque quas
+          nostrum perferendis saepe nobis laborum doloremque a dolores qui
+          laudantium! Iusto alias ad error aspernatur enim eos dolore, provident
+          deleniti quos?
+        </p>
+        <h2>Benefits</h2>
+        <ul>
+          <li>Lifetime Access</li>
+          <li>30 days Money Back</li>
+          <li>Customized For Every Player Type</li>
+        </ul>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
+          ipsam, optio veniam eaque sed atque amet iure quis unde et hic eveniet
+          asperiores mollitia suscipit sit quod recusandae, libero aliquid
+          voluptates officia inventore est! Repellat cumque quo voluptate
+          voluptates praesentium dignissimos aliquam maiores, totam optio
+          eveniet at veritatis quam cum sequi vel dolorem velit quis eius
+          reiciendis officiis. Distinctio dolore exercitationem id. Inventore
+          quo natus veniam voluptatibus nam ipsum aperiam?
+        </p>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-container" id="modal">
+      <div class="modal">
+        <button class="btn-close" id="close">
+          <i class="fas fa-times"></i>
+        </button>
+        <h3 class="modal-header">Sign Up!</h3>
+        <p>Register to have a chance to get life changing courierand more</p>
+
+        <form class="modal-action">
+          <div class="formSections">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter Name" />
+            <small>Error msg</small>
+          </div>
+          <div class="formSections">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter Email" />
+            <small>Error msg</small>
+          </div>
+          <div class="formSections">
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter Password" />
+            <small>Error msg</small>
+          </div>
+          <div class="formSections">
+            <label for="password2">Confirm Password:</label>
+            <input
+              type="password"
+              id="password2"
+              placeholder="Confirm Password"
+            />
+            <small>Error msg</small>
+          </div>
+          <input type="submit" value="Submit" class="submit-btn" />
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

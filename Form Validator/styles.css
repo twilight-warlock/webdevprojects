@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+:root {
+  --success-color: rgb(100, 226, 117);
+  --error-color: rgba(236, 65, 65, 0.733);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(
+    to right,
+    rgba(6, 136, 243, 0.767),
+    rgb(16, 18, 139)
+  );
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.container {
+  background: whitesmoke;
+  border-radius: 5px;
+  box-shadow: 3px 5px 10px rgba(0, 0, 255, 0.2);
+  width: 400px;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.form {
+  padding: 20px 40px;
+}
+.formSections {
+  margin-bottom: 30px;
+  position: relative;
+}
+.formSections label {
+  display: block;
+  color: #777;
+  margin-bottom: 5px;
+  padding-left: 5px;
+  font-weight: 600;
+}
+.formSections input {
+  border: 3px solid #f0f0f0;
+  border-radius: 6px;
+  height: 40px;
+  width: 100%;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+.formSections input:focus {
+  outline: none;
+  border-color: rgb(156, 220, 224);
+}
+.form button {
+  width: 30%;
+  font-size: 1rem;
+  background: linear-gradient(
+    to right,
+    rgba(6, 136, 243, 0.767),
+    rgb(47, 49, 151)
+  );
+  border-radius: 15px;
+  border: none;
+  display: block;
+  /* position: relative; */
+  /* height: 35px; */
+  width: 100%;
+  padding: 10px;
+  margin: auto;
+  color: white;
+}
+.form button:hover {
+  /* font-size: 17px; */
+  background: linear-gradient(
+    to top,
+    rgba(6, 136, 243, 0.767),
+    rgb(47, 49, 151)
+  );
+}
+/* .form button:hover {
+  font-size: 1.1rem;
+  background: #333;
+  animation-name: try;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes try {
+  0% {
+    color: firebrick;
+  }
+  10% {
+    color: orangered;
+  }
+  20% {
+    color: rgb(255, 217, 0);
+  }
+  30% {
+    color: rgb(39, 218, 39);
+  }
+  40% {
+    color: springgreen;
+  }
+  50% {
+    color: rgb(100, 175, 237);
+  }
+  60% {
+    color: rgb(28, 102, 240);
+  }
+  70% {
+    color: rgb(67, 37, 202);
+  }
+  80% {
+    color: rgb(132, 61, 165);
+  }
+  90% {
+    color: darkmagenta;
+  }
+  100% {
+    color: firebrick;
+  }
+} */
+
+/* Javascript added to CSS */
+.formSections.success input {
+  border-color: var(--success-color);
+}
+.formSections.error input {
+  border-color: var(--error-color);
+}
+.formSections small {
+  color: var(--error-color);
+  font-weight: 600;
+  padding-left: 5px;
+  position: absolute;
+  display: block;
+  visibility: hidden;
+}
+.formSections.error small {
+  visibility: visible;
+}
+
+/* background: linear-gradient(
+    135deg,
+    #fd1d1d,
+    #d62976,
+    #fa7e1e,
+    #feda75,
+    #48ff00,
+    #00ffd5,
+    #4f5bd5,
+    #7a00ff,
+    #962fbf,
+    #ff0000
+  ); */
