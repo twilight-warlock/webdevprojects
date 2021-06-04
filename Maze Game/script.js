@@ -1,9 +1,10 @@
 const { Engine, Render, Runner, World, Bodies, Body, Events } = Matter;
 const winMessage = document.querySelector(".win");
-const width = window.innerWidth - 5,
-  height = window.innerHeight - 5,
+const container = document.querySelector(".container");
+const width = 500,
+  height = 500,
   wallThiccness = 2,
-  rows = 10,
+  rows = 15,
   cols = 15,
   unitLengthX = width / cols,
   unitLengthY = height / rows,
@@ -15,7 +16,7 @@ const engine = Engine.create();
 engine.world.gravity.y = 0;
 const { world } = engine;
 const render = Render.create({
-  element: document.body,
+  element: container,
   engine: engine,
   options: {
     width,
@@ -196,6 +197,7 @@ const ball = Bodies.circle(unitLengthX / 2, unitLengthY / 2, radius * 0.7, {
 World.add(world, ball);
 
 // ==================Event Listener================
+
 document.addEventListener("keydown", (e) => {
   const { x, y } = ball.velocity;
 
